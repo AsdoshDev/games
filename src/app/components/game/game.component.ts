@@ -10,5 +10,7 @@ export class GameComponent implements OnInit {
 
   @Input("game") game;
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log('test');
+  }
 }
