@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ game.title }}</mat-card-title>
+    <mat-card-subtitle>{{ game.platform }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <label>Score</label> : <span>{{ game.score }}</span>
+    </div>
+    <div>
+      <label>Year released </label>: <span>{{ game.release_year }}</span>
+    </div>
+    <div>
+      <label>Editor's Choice </label>:
+      <span [ngClass]="game.editors_choice === 'Y' ? 'green' : 'red'">{{
+        game.editors_choice === "Y" ? "Yes" : "No"
+      }}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

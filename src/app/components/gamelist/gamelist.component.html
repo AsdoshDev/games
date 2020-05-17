@@ -1,0 +1,17 @@
+<div class="game-list-container">
+  <div *ngFor="let game of games$ | async" class="game">
+    <game [ngStyle]="{ width: '300' + 'px' }" [game]="game"></game>
+  </div>
+</div>
+<!-- this is cool -->
+<!-- ths is cool -->
+<!-- <cdk-virtual-scroll-viewport itemSize="10">
+        <div class="game-list-container">
+            <div *cdkVirtualFor="let game of (games$ | async);let index = i;" class="game">
+                <game attr.index="{{i}}" [ngStyle]="{'width':'300' + 'px'}" [game]="game"></game>
+            </div>
+    
+          
+        </div>
+    
+    </cdk-virtual-scroll-viewport> -->
